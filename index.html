@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+</head>
+<body>
+
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button"></a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">หน้าแรก</a>
+  <a href="new.html" onclick="w3_close()" class="w3-bar-item w3-button">ฟีดข่าว</a>
+  <a href="check.html" onclick="w3_close()" class="w3-bar-item w3-button">ตรวจสอบไทม์ไลน์</a>
+  <a href="record.html" onclick="w3_close()" class="w3-bar-item w3-button">บันทึกไทม์ไลน์</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">ข้อมูลติดต่อโรงพยาบาล</a>
+  <a href="station.html" onclick="w3_close()" class="w3-bar-item w3-button">Station ใกล้คุณ</a>
+  <a href="static.html" onclick="w3_close()" class="w3-bar-item w3-button">สถิติผู้ติดเชื้อ</a>
+</nav>
+  <!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+ <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+ <div class="w3-right w3-padding-16">
+     <i style='font-size:24px' class='far'>&#xf0f3;</i>
+ </div>
+ <div class="w3-center w3-padding-16">หน้าแรก</div>
+</div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1400px;margin-top:100px">
+
+<!-- First Photo Grid-->
+<div class="w3-row-padding w3-padding-16 w3-center" id="menu1">
+    <div class="w3-quarter">
+        <a href="default.asp">
+            <img src="img/9.png" alt="HTML tutorial" style="width:80%">
+        </a>
+      <h3>ฟีดข่าว</h3>
+    </div>
+    <div class="w3-quarter">
+        <a href="default.asp">
+            <img src="img/10.png" alt="HTML tutorial" style="width:80%">
+        </a>
+      <h3>ตรวจสอบไทม์ไลน์</h3>
+    </div>
+    <div class="w3-quarter">
+        <a href="default.asp">
+            <img src="img/11.png" alt="HTML tutorial" style="width:80%" class=>
+        </a>
+      <h3>บันทึกไทม์ไลน์</h3>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+
+    <div class="w3-row-padding w3-padding-16 w3-center" id="menu2">
+      <div class="w3-quarter">
+        <a href="default.asp">
+            <img src="img/12.png" alt="HTML tutorial" style="width:80%">
+        </a>
+        <h3>โรงพยาบาล</h3>
+      </div>
+      <div class="w3-quarter">
+        <a href="default.asp">
+            <img src="img/13.png" alt="HTML tutorial" style="width:80%">
+        </a>
+        <h3>Station ใกล้คุณ</h3>
+      </div>
+      <div class="w3-quarter">
+        <a href="default.asp">
+            <img src="img/16.png" alt="HTML tutorial" style="width:80%">
+        </a>
+        <h3>สถิติผู้ติดเชื้อ</h3>
+      </div>
+    </div>
+
+<!-- End page content -->
+</div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+     
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+
+</body>
+</html>
