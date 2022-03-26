@@ -8,36 +8,44 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 </head>
 <body>
 
 <!-- Top menu -->
-<div class="w3-top">
+
+
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-bar-item w3-button"></a>
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button"  href="#"><i class="fa fa-home ">หน้าแรก </i></a>
+      <a href="new.html" onclick="w3_close()" class="w3-bar-item w3-button" ><i class='bx bxs-like '>ฟีดข่าว</i></a>
+      <a href="check.html" onclick="w3_close()" class="w3-bar-item w3-button"href="#"><i class="fa fa-search">ตรวจสอบไทม์ไลน์</i></a>
+      <a href="Record.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="material-icons ">&#xe85d;บันทึกไทม์ไลน์</i></a>
+      <a href="Contact.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="material-icons">&#xe8fc;ข้อมูลติดต่อโรงพยาบาล</i></a>
+      <a href="Station.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="material-icons">&#xe84f; สถานที่ใกล้คุณ</i></a>
+      <a href="static.html" onclick="w3_close()" class="w3-bar-item w3-button" href="#"><i class="fa fa-globe "></i>สถิติผู้ติดเชื้อ</a>
+    </nav>
+    <div class="w3-top">
     <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
    <div class="w3-right w3-padding-16"></div>
    <div class="w3-center w3-padding-16">ตรวจสอบไทม์ไลน์</div>
  </div>
 </div>
-
-    <!-- Sidebar (hidden by default) -->
-    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()"
-        class="w3-bar-item w3-button"></a>
-        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">หน้าแรก</a>
-        <a href="new.html" onclick="w3_close()" class="w3-bar-item w3-button">ฟีดข่าว</a>
-        <a href="check.html" onclick="w3_close()" class="w3-bar-item w3-button">ตรวจสอบไทม์ไลน์</a>
-        <a href="record.html" onclick="w3_close()" class="w3-bar-item w3-button">บันทึกไทม์ไลน์</a>
-        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">ข้อมูลติดต่อโรงพยาบาล</a>
-        <a href="station.html" onclick="w3_close()" class="w3-bar-item w3-button">Station ใกล้คุณ</a>
-        <a href="static.html" onclick="w3_close()" class="w3-bar-item w3-button">สถิติผู้ติดเชื้อ</a>
-      </nav>
   <div class="container-fluid">
     <div class="w3-white w3-xlarge" style="max-width:1400px;margin: 100px;">
     <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16"></p>
     </div>  
 </div>
+
 
   <script>
     // Script to open and close sidebar
