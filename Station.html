@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!-- Sidebar (hidden by default) -->
- <div class="w3-top">
-    <div class=" w3-xlarge" style="max-width:1200px;margin:auto">
-   <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    </div>
-</div>
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-    class="w3-bar-item w3-button"></a>
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button"  href="#"><i class="fa fa-home ">หน้าแรก </i></a>
-    <a href="new.html" onclick="w3_close()" class="w3-bar-item w3-button" ><i class='bx bxs-like '>ฟีดข่าว</i></a>
-    <a href="check.html" onclick="w3_close()" class="w3-bar-item w3-button"href="#"><i class="fa fa-search">ตรวจสอบไทม์ไลน์</i></a>
-    <a href="Record.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="material-icons ">&#xe85d;บันทึกไทม์ไลน์</i></a>
-    <a href="Contact.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="material-icons">&#xe8fc;ข้อมูลติดต่อโรงพยาบาล</i></a>
-    <a href="Station.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="material-icons">&#xe84f; สถานที่ใกล้คุณ</i></a>
-    <a href="static.html" onclick="w3_close()" class="w3-bar-item w3-button" href="#"><i class="fa fa-globe "></i>สถิติผู้ติดเชื้อ</a>
-  </nav>
- 
+    <title>station</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+
 </head>
+
 <body>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 0,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+  <section>
+        <div class="container">
+            <div class="content">
+                <div class="content_center">
+                 
+                    <iframe src="
+                        https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0119755715655!2d98.35062861409926!3d7.893815107907678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff6dce65ce41eb4!2sBuilding%206%20PSU!5e0!3m2!1sth!2sth!4v1649086685011!5m2!1sth!2sth"
+                        width="100%" height="1000px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+</body>
+
 </html>
