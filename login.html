@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans+Thai:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: "Noto Sans Thai", sans-serif;
+        background-color: rgb(191, 233, 239);
+      }
+
+      form {
+          
+        background-color: white;
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        background-color: rgb(247, 248, 250);
+        border-radius: 10px;
+        font-family: "Noto Sans Thai", sans-serif;
+        width: 100%;
+        padding: 12px 15px;
+        margin: 10px 0;
+        display: inline-block;
+        border: none;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #ffffff;
+        border-radius: 10px;
+        font-size: 18px;
+        margin: 3px 0;
+        border: 2px solid rgb(0, 34, 69); 
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+      }
+
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+
+      .container {
+        color: rgb(131, 131, 131);
+        padding: 16px;
+      }
+
+      span.psw {
+        color: rgb(131, 131, 131);
+        float: right;
+        padding-top: 5px;
+      }
+
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+
+        .cancelbtn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 class="w3-center" style="margin-top: 30px; font-size:40px">
+      Take care yourself
+    </h2>
+
+    <div class="imgcontainer">
+      <img
+        src="logo/36.webp"
+        style="width: 100%; height: 100%; margin-top: auto"
+      />
+    </div>
+
+
+
+    
+    <form action="/action_page.php" method="post">
+      <div class="container">
+        
+        <Button  type="submit"  fullWidth variant="contained" color="primary" onClick={handleGoogleLogin} style="background-color: rgb(247, 248, 250);  border: 2px solid rgb(247, 248, 250); margin-top: 20px;">
+        <img
+          width="20px" 
+          style="margin-Bottom: 3px ; margin-Right: 5px; "
+          alt="Google sign-in"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
+          Sign in with google
+      </Button>
+
+
+        <hr>
+       
+
+        <input type="text" placeholder="อีเมล" name="uname" required />
+
+        <input type="password" placeholder="รหัสผ่าน" name="psw" required />
+
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-top: 10px;"/> Remember me 
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </label>
+     
+        <button type="submit" style="margin-top: 20px;">เข้าสู่ระบบ</button>
+
+        <button type="submit" style="margin-top: 20px; background-color: rgb(0, 34, 69); color:white;">สมัครสมาชิก</button>
+      </div>
+
+      <div class="container">
+         
+
+      </div>
+    </form>
+  </body>
+</html>
